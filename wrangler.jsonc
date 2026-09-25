@@ -1,7 +1,17 @@
 {
-  "$schema":"node_modules/wrangler/config-schema.json",
-  "name":"curso-reparo-gol",
-  "main":"src/worker.js",
-  "compatibility_date":"2026-08-31",
-  "assets":{"directory":"./public","binding":"ASSETS"}
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "site-gol",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-08-31",
+  "keep_vars": true,
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true
+    }
+  },
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS"
+  }
 }
